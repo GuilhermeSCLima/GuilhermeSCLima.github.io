@@ -7,25 +7,27 @@
   <title>Contato | Guilherme Lima</title>
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="./images/logo.jpeg" type="image/jpeg">
+  <script src="lang.js"></script>
+  <script src="script.js"></script>
 </head>
 
 <body class="bg-zinc-700 text-zinc-100">
   <section id="content" class="flex justify-center items-center w-screen h-screen">
     <div class="w-1/2 flex flex-col gap-4 justify-center items-center">
-      <h3 class="font-semibold self-center text-2xl">Contato:</h3>
-      <p>
+      <h3 class="font-semibold self-center text-2xl" id="title">Contato:</h3>
+      <p id="main-text">
         Embora nosso site esteja em construção, estamos disponíveis para atendê-lo e responder suas dúvidas através dos
         seguintes meios de contato:
       </p>
 
       <span>E-mail: <a class="hover:underline" rel="noreferrer" target="_blank"
           href="mailto:contato@guilhermelima.dev">contato@guilhermelima.dev</a></span>
-      <span class="flex gap-2">Telefone: <a class="hover:underline" rel="noreferrer" target="_blank"
-          href="tel:+5515992754245">+55 (15) 9-9275-4245</a> <a rel="noreferrer" target="_blank"
+      <span class="flex gap-2"><span id="tel">Telefone:</span> <a class="hover:underline" rel="noreferrer"
+          target="_blank" href="tel:+5515992754245">+55 (15) 9-9275-4245</a> <a rel="noreferrer" target="_blank"
           href="https://api.whatsapp.com/send?phone=5515992754245"><img class="w-5 hover:w-6"
             src="images/logos/whatsapp.svg" alt="whatsapp-logo"></a></span>
       <div class="flex flex-row gap-2 self-center">
-        Redes Sociais:
+        <span id="social-media">Redes Sociais:</span>
         <a class="hover:underline" href="https://www.instagram.com/guilhermesclima/" rel="noreferrer" target="_blank">
           <img class="w-5 hover:w-6" src="images/logos/instagram.svg" alt="instagram-logo">
         </a>
@@ -41,22 +43,22 @@
         <li><a id="contact" href="contact.html" class="nav border rounded-md px-2 py-1 hover:underline">Contato</a></li>
       </ul>
       <section id="flags" class="flex gap-2 flex-row">
-        <div id="Portuguese" class="relative w-10 cursor-pointer hover:w-12" onclick="changeLanguageContact(this)">
+        <div id="Portuguese" class="relative w-10 cursor-pointer my-2" onclick="changeLanguageContact(this)">
           <img src="./images/flags/portuguese.svg" alt="portuguese-flag portuguese-selector"
             class="w-full h-full rounded-full">
           <div class="cover absolute inset-0 w-full h-full bg-white opacity-50 rounded-full"></div>
         </div>
-        <div id="Spanish" class="relative w-10 cursor-pointer hover:w-12" onclick="changeLanguageContact(this)">
+        <div id="Spanish" class="relative w-10 cursor-pointer my-2" onclick="changeLanguageContact(this)">
           <img src="./images/flags/spanish.svg" alt="spanish.svg-flag spanish.svg-selector"
             class="w-full h-full rounded-full">
           <div class="cover absolute hidden inset-0 w-full h-full bg-white opacity-50 rounded-full"></div>
         </div>
-        <div id="English" class="relative w-10 cursor-pointer hover:w-12" onclick="changeLanguageContact(this)">
+        <div id="English" class="relative w-10 cursor-pointer my-2" onclick="changeLanguageContact(this)">
           <img src="./images/flags/english.svg" alt="english.svg-flag english.svg-selector"
             class="w-full h-full rounded-full">
           <div class="cover absolute hidden inset-0 w-full h-full bg-white opacity-50 rounded-full"></div>
         </div>
-        <div id="French" class="relative w-10 cursor-pointer hover:w-12" onclick="changeLanguageContact(this)">
+        <div id="French" class="relative w-10 cursor-pointer my-2" onclick="changeLanguageContact(this)">
           <img src="./images/flags/french.svg" alt="french.svg-flag french.svg-selector"
             class="w-full h-full rounded-full">
           <div class="cover absolute hidden inset-0 w-full h-full bg-white opacity-50 rounded-full"></div>
@@ -65,7 +67,6 @@
     </div>
   </section>
 </body>
-<script src="lang.js"></script>
-<script src="script.js"></script>
+
 
 </html>

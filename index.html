@@ -10,33 +10,33 @@
 </head>
 
 <body class="bg-zinc-700 text-zinc-100">
-  <section id="info" class="h-screen flex justify-center items-center">
-    <div class="w-1/2 flex flex-col gap-4 justify-center items-center">
-      <h1 class="text-3xl font-bold">Guilherme Lima</h1>
+  <section id="info" class="h-screen overflow-y-hidden my-2 flex justify-center items-center">
+    <div class="w-1/2 sm:w-3/4 flex flex-col gap-4 justify-center items-center">
+      <h1 class="text-xl font-bold" id="title">Olá eu sou Guilherme Lima!!</h1>
       <p class="text-justify" id="home-text">
         Gostaríamos de informar que nosso site está passando por um processo de construção e aprimoramento. Estamos
         trabalhando arduamente nos bastidores para criar uma plataforma online que atenda às suas expectativas e
         necessidades da melhor forma possível.
       </p>
-      <ul class="flex flex-row gap-4">
+      <ul class="flex flex-col sm:flex-row gap-4">
         <li><a id="home" href="index.html" class="nav border rounded-md px-2 py-1 hover:underline">Página inicial</a></li>
         <li><a id="services" href="./src/services.html" class="nav border rounded-md px-2 py-1 hover:underline">Serviços</a></li>
         <li><a id="contact" href="./src/contact.html" class="nav border rounded-md px-2 py-1 hover:underline">Contato</a></li>
       </ul>
-      <section id="flags" class="flex gap-2 flex-row">
-        <div id="Portuguese" class="relative w-10 cursor-pointer hover:w-12" onclick="changeLanguageHome(this)">
+      <section id="flags" class="sm:flex gap-4 sm:flex-row">
+        <div id="Portuguese" class="relative w-10 cursor-pointer my-2" onclick="changeLanguageHome(this)">
           <img src="./src/images/flags/portuguese.svg" alt="portuguese-flag portuguese-selector" class="w-full h-full rounded-full">
           <div class="cover absolute inset-0 w-full h-full bg-white opacity-50 rounded-full"></div>
         </div>
-        <div id="Spanish" class="relative w-10 cursor-pointer hover:w-12" onclick="changeLanguageHome(this)">
+        <div id="Spanish" class="relative w-10 cursor-pointer my-2" onclick="changeLanguageHome(this)">
           <img src="./src/images/flags/spanish.svg" alt="spanish.svg-flag spanish.svg-selector" class="w-full h-full rounded-full">
           <div class="cover absolute hidden inset-0 w-full h-full bg-white opacity-50 rounded-full"></div>
         </div>
-        <div id="English" class="relative w-10 cursor-pointer hover:w-12" onclick="changeLanguageHome(this)">
+        <div id="English" class="relative w-10 cursor-pointer my-2" onclick="changeLanguageHome(this)">
           <img src="./src/images/flags/english.svg" alt="english.svg-flag english.svg-selector" class="w-full h-full rounded-full">
           <div class="cover absolute hidden inset-0 w-full h-full bg-white opacity-50 rounded-full"></div>
         </div>
-        <div id="French" class="relative w-10 cursor-pointer hover:w-12" onclick="changeLanguageHome(this)">
+        <div id="French" class="relative w-10 cursor-pointer my-2" onclick="changeLanguageHome(this)">
           <img src="./src/images/flags/french.svg" alt="french.svg-flag french.svg-selector" class="w-full h-full rounded-full">
           <div class="cover absolute hidden inset-0 w-full h-full bg-white opacity-50 rounded-full"></div>
         </div>
