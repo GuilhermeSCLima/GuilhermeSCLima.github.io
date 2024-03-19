@@ -9,47 +9,61 @@
   <link rel="shortcut icon" href="./images/logo.jpeg" type="image/jpeg">
 </head>
 
-<body class="bg-zinc-700 text-zinc-100">
-  <section id="content" class="flex justify-center items-center w-screen h-screen">
+<body class="bg-zinc-700 text-zinc-100 overflow-y-auto">
+  <section id="info" class="min-h-screen my-8 flex justify-center items-center">
     <div class="w-1/2 flex flex-col gap-4 justify-center items-center">
       <h3 class="font-semibold self-center text-2xl" id="title">Descrição dos Serviços:</h3>
       <ul class="list-disc gap-2 flex flex-col" id="service-list">
-        <li><span class="font-semibold italic">Criação de Site:</span> Estamos dedicando nosso tempo e expertise na criação de sites
-        personalizados que refletem a identidade e objetivos de nossos clientes, proporcionando uma presença digital
-        marcante.</li>
-        <li><span class="font-semibold italic">Criação de Bot (Discord):</span> Em breve, ofereceremos serviços especializados na
-        criação de bots para Discord, proporcionando soluções de automação e interação para comunidades online.</li>
-        <li><span class="font-semibold italic">Configuração de Servidor de Discord:</span> Estamos preparando recursos para auxiliar
-        na configuração e otimização de servidores Discord, garantindo uma experiência fluida e eficiente para os
-        usuários.</li>
-        <li><span class="font-semibold italic">Configuração de Servidor FiveM:</span> Em breve, disponibilizaremos serviços de
-        configuração de servidores FiveM, fornecendo soluções personalizadas para comunidades de jogos.</li>
-        <li><span class="font-semibold italic">Criação de Scripts FiveM/Bot Discord:</span> Estamos desenvolvendo scripts
-        personalizados para servidores FiveM e bots Discord, oferecendo funcionalidades exclusivas e adaptadas às
-        necessidades de cada projeto.</li>
-        <li><span class="font-semibold italic">Configuração de Lojas Virtuais:</span> Preparamos recursos para auxiliar na
-        configuração e personalização de lojas virtuais, possibilitando uma presença online eficiente para vendas.</li>
+        <li><span class="font-semibold italic">Criação de Site:</span> Estamos dedicando nosso tempo e expertise na
+          criação de sites
+          personalizados que refletem a identidade e objetivos de nossos clientes, proporcionando uma presença digital
+          marcante.</li>
+        <li><span class="font-semibold italic">Criação de Bot (Discord):</span> Em breve, ofereceremos serviços
+          especializados na
+          criação de bots para Discord, proporcionando soluções de automação e interação para comunidades online.</li>
+        <li><span class="font-semibold italic">Configuração de Servidor de Discord:</span> Estamos preparando recursos
+          para auxiliar
+          na configuração e otimização de servidores Discord, garantindo uma experiência fluida e eficiente para os
+          usuários.</li>
+        <li><span class="font-semibold italic">Configuração de Servidor FiveM:</span> Em breve, disponibilizaremos
+          serviços de
+          configuração de servidores FiveM, fornecendo soluções personalizadas para comunidades de jogos.</li>
+        <li><span class="font-semibold italic">Criação de Scripts FiveM/Bot Discord:</span> Estamos desenvolvendo
+          scripts
+          personalizados para servidores FiveM e bots Discord, oferecendo funcionalidades exclusivas e adaptadas às
+          necessidades de cada projeto.</li>
+        <li><span class="font-semibold italic">Configuração de Lojas Virtuais:</span> Preparamos recursos para auxiliar
+          na
+          configuração e personalização de lojas virtuais, possibilitando uma presença online eficiente para vendas.
+        </li>
       </ul>
-      <ul class="flex flex-row gap-4">
-        <li><a id="home" href="../index.html" class="nav border rounded-md px-2 py-1 hover:underline">Página inicial</a></li>
-        <li><a id="services" href="services.html" class="nav border rounded-md px-2 py-1 hover:underline">Serviços</a></li>
-        <li><a id="contact" href="contact.html" class="nav border rounded-md px-2 py-1 hover:underline">Contato</a></li>
+      <ul class="flex flex-col sm:flex-row gap-4 items-center justify-center">
+        <li><a id="home" href="../index.html" class="nav border rounded-md px-2 py-1 hover:underline">Página inicial</a>
+        </li>
+        <li><a id="services" href="./services.html"
+            class="nav border rounded-md px-2 py-1 hover:underline">Serviços</a></li>
+        <li><a id="contact" href="./contact.html"
+            class="nav border rounded-md px-2 py-1 hover:underline">Contato</a></li>
       </ul>
-      <section id="flags" class="flex gap-2 flex-row">
-        <div id="Portuguese" class="relative w-10 cursor-pointer my-2" onclick="changeLanguageServices(this)">
-          <img src="./images/flags/portuguese.svg" alt="portuguese-flag portuguese-selector" class="w-full h-full rounded-full">
+      <section id="flags" class="sm:flex gap-4 sm:flex-row">
+        <div id="Portuguese" class="relative w-10 cursor-pointer my-2" onclick="changeLanguageHome(this)">
+          <img src="./images/flags/portuguese.svg" alt="portuguese-flag portuguese-selector"
+            class="w-full h-full rounded-full">
           <div class="cover absolute inset-0 w-full h-full bg-white opacity-50 rounded-full"></div>
         </div>
-        <div id="Spanish" class="relative w-10 cursor-pointer my-2" onclick="changeLanguageServices(this)">
-          <img src="./images/flags/spanish.svg" alt="spanish.svg-flag spanish.svg-selector" class="w-full h-full rounded-full">
+        <div id="Spanish" class="relative w-10 cursor-pointer my-2" onclick="changeLanguageHome(this)">
+          <img src="./images/flags/spanish.svg" alt="spanish.svg-flag spanish.svg-selector"
+            class="w-full h-full rounded-full">
           <div class="cover absolute hidden inset-0 w-full h-full bg-white opacity-50 rounded-full"></div>
         </div>
-        <div id="English" class="relative w-10 cursor-pointer my-2" onclick="changeLanguageServices(this)">
-          <img src="./images/flags/english.svg" alt="english.svg-flag english.svg-selector" class="w-full h-full rounded-full">
+        <div id="English" class="relative w-10 cursor-pointer my-2" onclick="changeLanguageHome(this)">
+          <img src="./images/flags/english.svg" alt="english.svg-flag english.svg-selector"
+            class="w-full h-full rounded-full">
           <div class="cover absolute hidden inset-0 w-full h-full bg-white opacity-50 rounded-full"></div>
         </div>
-        <div id="French" class="relative w-10 cursor-pointer my-2" onclick="changeLanguageServices(this)">
-          <img src="./images/flags/french.svg" alt="french.svg-flag french.svg-selector" class="w-full h-full rounded-full">
+        <div id="French" class="relative w-10 cursor-pointer my-2" onclick="changeLanguageHome(this)">
+          <img src="./images/flags/french.svg" alt="french.svg-flag french.svg-selector"
+            class="w-full h-full rounded-full">
           <div class="cover absolute hidden inset-0 w-full h-full bg-white opacity-50 rounded-full"></div>
         </div>
       </section>

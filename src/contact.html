@@ -11,8 +11,8 @@
   <script src="script.js"></script>
 </head>
 
-<body class="bg-zinc-700 text-zinc-100">
-  <section id="content" class="flex justify-center items-center w-screen h-screen">
+<body class="bg-zinc-700 text-zinc-100 overflow-y-auto">
+  <section id="info" class="min-h-screen my-8 flex justify-center items-center">
     <div class="w-1/2 flex flex-col gap-4 justify-center items-center">
       <h3 class="font-semibold self-center text-2xl" id="title">Contato:</h3>
       <p id="main-text">
@@ -35,32 +35,26 @@
           <img class="w-5 hover:w-6" src="images/logos/github.svg" alt="github-logo">
         </a>
       </div>
-      <ul class="flex flex-row gap-4">
-        <li><a id="home" href="../index.html" class="nav border rounded-md px-2 py-1 hover:underline">Página inicial</a>
-        </li>
-        <li><a id="services" href="services.html" class="nav border rounded-md px-2 py-1 hover:underline">Serviços</a>
-        </li>
-        <li><a id="contact" href="contact.html" class="nav border rounded-md px-2 py-1 hover:underline">Contato</a></li>
+      <ul class="flex flex-col sm:flex-row gap-4 items-center justify-center">
+        <li><a id="home" href="../index.html" class="nav border rounded-md px-2 py-1 hover:underline">Página inicial</a></li>
+        <li><a id="services" href="./services.html" class="nav border rounded-md px-2 py-1 hover:underline">Serviços</a></li>
+        <li><a id="contact" href="./contact.html" class="nav border rounded-md px-2 py-1 hover:underline">Contato</a></li>
       </ul>
-      <section id="flags" class="flex gap-2 flex-row">
-        <div id="Portuguese" class="relative w-10 cursor-pointer my-2" onclick="changeLanguageContact(this)">
-          <img src="./images/flags/portuguese.svg" alt="portuguese-flag portuguese-selector"
-            class="w-full h-full rounded-full">
+      <section id="flags" class="sm:flex gap-4 sm:flex-row">
+        <div id="Portuguese" class="relative w-10 cursor-pointer my-2" onclick="changeLanguageHome(this)">
+          <img src="./images/flags/portuguese.svg" alt="portuguese-flag portuguese-selector" class="w-full h-full rounded-full">
           <div class="cover absolute inset-0 w-full h-full bg-white opacity-50 rounded-full"></div>
         </div>
-        <div id="Spanish" class="relative w-10 cursor-pointer my-2" onclick="changeLanguageContact(this)">
-          <img src="./images/flags/spanish.svg" alt="spanish.svg-flag spanish.svg-selector"
-            class="w-full h-full rounded-full">
+        <div id="Spanish" class="relative w-10 cursor-pointer my-2" onclick="changeLanguageHome(this)">
+          <img src="./images/flags/spanish.svg" alt="spanish.svg-flag spanish.svg-selector" class="w-full h-full rounded-full">
           <div class="cover absolute hidden inset-0 w-full h-full bg-white opacity-50 rounded-full"></div>
         </div>
-        <div id="English" class="relative w-10 cursor-pointer my-2" onclick="changeLanguageContact(this)">
-          <img src="./images/flags/english.svg" alt="english.svg-flag english.svg-selector"
-            class="w-full h-full rounded-full">
+        <div id="English" class="relative w-10 cursor-pointer my-2" onclick="changeLanguageHome(this)">
+          <img src="./images/flags/english.svg" alt="english.svg-flag english.svg-selector" class="w-full h-full rounded-full">
           <div class="cover absolute hidden inset-0 w-full h-full bg-white opacity-50 rounded-full"></div>
         </div>
-        <div id="French" class="relative w-10 cursor-pointer my-2" onclick="changeLanguageContact(this)">
-          <img src="./images/flags/french.svg" alt="french.svg-flag french.svg-selector"
-            class="w-full h-full rounded-full">
+        <div id="French" class="relative w-10 cursor-pointer my-2" onclick="changeLanguageHome(this)">
+          <img src="./images/flags/french.svg" alt="french.svg-flag french.svg-selector" class="w-full h-full rounded-full">
           <div class="cover absolute hidden inset-0 w-full h-full bg-white opacity-50 rounded-full"></div>
         </div>
       </section>
